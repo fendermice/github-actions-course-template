@@ -1,0 +1,11 @@
+name: Giphy generator
+
+on:
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [created, edited]
+    
+jobs:
+  giphy_generator:
+    runs_on: ubuntu_latest
